@@ -1,0 +1,181 @@
+---------------------------------------------------------------
+[ 2018-01-18T08:54:57+08:00 ] ::1 ::1 GET /fastadmin/public/admin/dashboard?ref=addtabs
+[ info ] localhost:9096/fastadmin/public/admin/dashboard?ref=addtabs [运行时间：0.059004s][吞吐率：16.95req/s] [内存消耗：2,287.16kb] [文件加载：69]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1515918971,1516157197,1516159493; Phpstorm-4d4a1897=033c7367-76ac-4855-8262-504438ddb470; _ga=GA1.1.1168175668.1516175940; _gid=GA1.1.1587534083.1516175940',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'addtabs',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\phpStudy\WWW\fastadmin\public/../application/common\view\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-18T08:54:59+08:00 ] ::1 ::1 GET /fastadmin/public/admin/index/login?url=%2Ffastadmin%2Fpublic%2Fadmin%2Fdashboard%3Fref%3Daddtabs
+[ info ] localhost:9096/fastadmin/public/admin/index/login?url=%2Ffastadmin%2Fpublic%2Fadmin%2Fdashboard%3Fref%3Daddtabs [运行时间：0.063003s][吞吐率：15.87req/s] [内存消耗：2,809.38kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:9096/fastadmin/public/admin/dashboard?ref=addtabs',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1515918971,1516157197,1516159493; Phpstorm-4d4a1897=033c7367-76ac-4855-8262-504438ddb470; _ga=GA1.1.1168175668.1516175940; _gid=GA1.1.1587534083.1516175940; PHPSESSID=38b3fcr2rg5p64n41n4bp1bnk3',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/fastadmin/public/admin/dashboard?ref=addtabs',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\upload\Upload @upload_config_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ E:\phpStudy\WWW\fastadmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\fastadmin\public/../application/admin\view\index\login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-18T08:55:00+08:00 ] ::1 ::1 GET /fastadmin/public/admin/ajax/lang?callback=define&controllername=index&v=1516236899
+[ info ] localhost:9096/fastadmin/public/admin/ajax/lang?callback=define&controllername=index&v=1516236899 [运行时间：0.061004s][吞吐率：16.39req/s] [内存消耗：2,674.56kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:9096/fastadmin/public/admin/index/login?url=%2Ffastadmin%2Fpublic%2Fadmin%2Fdashboard%3Fref%3Daddtabs',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1515918971,1516157197,1516159493; Phpstorm-4d4a1897=033c7367-76ac-4855-8262-504438ddb470; _ga=GA1.1.1168175668.1516175940; _gid=GA1.1.1587534083.1516175940; PHPSESSID=38b3fcr2rg5p64n41n4bp1bnk3',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1516236899',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\upload\Upload @upload_config_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\phpStudy\WWW\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\phpStudy\WWW\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-18T08:55:11+08:00 ] ::1 ::1 GET /fastadmin/public/
+[ info ] localhost:9096/fastadmin/public/ [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：2,338.69kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1515918971,1516157197,1516159493; Phpstorm-4d4a1897=033c7367-76ac-4855-8262-504438ddb470; _ga=GA1.1.1168175668.1516175940; _gid=GA1.1.1587534083.1516175940; PHPSESSID=38b3fcr2rg5p64n41n4bp1bnk3',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\upload\Upload @upload_config_init [ RunTime:0.001000s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\fastadmin\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\fastadmin\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\fastadmin\public/../application/index\view\index\index.html [ array (
+  0 => 'site',
+  1 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
