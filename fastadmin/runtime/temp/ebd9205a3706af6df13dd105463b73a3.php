@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"E:\phpStudy\WWW\fastadmin\public/../application/index\view\index\index.html";i:1516329945;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"E:\phpStudy\WWW\fastadmin\public/../application/index\view\index\index.html";i:1516358693;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>FastAdmin - 基于ThinkPHP5和Bootstrap的极速后台开发框架</title>
+        <title>四川建筑职业技术学院-质量检查</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -63,8 +63,8 @@
                     <div class="col-sm-12">
                         <div class="header-content">
                             <div class="header-content-inner">
-                                <h1>FastAdmin</h1>
-                                <h3>基于ThinkPHP5和Bootstrap的极速后台开发框架</h3>
+                                <h1>质检系统</h1>
+                                <h3>四川建筑职业技术学院-质量检查</h3>
                                 <a href="<?php echo url('admin/index/login'); ?>" class="btn btn-outline btn-xl page-scroll">登录后台</a>
                             </div>
                         </div>
