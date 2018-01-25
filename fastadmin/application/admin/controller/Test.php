@@ -8,6 +8,7 @@
 
 namespace app\admin\controller;
 use app\common\controller\Backend;
+use app\admin\model;
 
 
 class Test extends Backend
@@ -16,21 +17,21 @@ class Test extends Backend
     {
         $this->view->assign([
             'totaluser'        => 'hello world',
-            'sum'               =>$this->sum(80)
+            'sum'               =>$this->sum(80)['title']
         ]);
 
         return $this->view->fetch();
-
-
     }
      private function sum($max)
      {
-         $sum=0;
+         $s=new model\test();
+         $ss=$s->gettest();
+        $sum=0;
          for($i=0;$i<=$max;$i++)
          {
              $sum+=$i;
          }
-         return $sum;
+         return $ss;
      }
 
 }
