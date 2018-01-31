@@ -17,7 +17,7 @@ class Test extends Backend
     {
         $this->view->assign([
             'totaluser'        => 'hello world',
-            'sum'               =>$this->sum(80)['title']
+            'sum'               =>$this->sum(80)['week']
         ]);
 
         return $this->view->fetch();

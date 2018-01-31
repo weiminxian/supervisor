@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/fastadmin/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/overtrue/socialite" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/mtdowling/cron-expression" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/overtrue/pinyin" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/karsonzhang/fastadmin-addons" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/overtrue/wechat" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/topthink/think-helper" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/topthink/think-captcha" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/phpmailer/phpmailer" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/pimple/pimple" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/topthink/think-installer" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/composer" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/phpoffice/phpexcel" />
+      <path value="$PROJECT_DIR$/fastadmin/vendor/endroid/qrcode" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="5.4.0" />
+</project>
