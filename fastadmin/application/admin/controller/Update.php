@@ -71,9 +71,12 @@ class Update extends Backend
             $file_true_name=$_FILES['myfile']['name'];
             $move_to_file=$user_path."/".time().rand(1,1000).substr($file_true_name,strrpos($file_true_name,"."));
             //echo "$uploaded_file   $move_to_file";
+
+            $path=substr("$move_to_file",15);
+
             if(move_uploaded_file($uploaded_file,iconv("utf-8","gb2312",$move_to_file)))
             {
-                echo $_FILES['myfile']['name']."上传成功";
+                echo $_FILES['myfile']['name']."上传成功"," $user_path,<img src=\"$path\" />";
             }
             else
             {
