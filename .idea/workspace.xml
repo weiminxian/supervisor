@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36387a6a-475f-416c-bdef-5a0998237e95" name="默认的" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/fastadmin/application/admin/controller/Update.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/fastadmin/application/admin/controller/Update1.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/fastadmin/application/admin/model/update.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/fastadmin/application/admin/view/update/index.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/untitled.iml" afterPath="$PROJECT_DIR$/.idea/untitled.iml" />
+    <list default="true" id="36387a6a-475f-416c-bdef-5a0998237e95" name="默认的" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/fastadmin/application/admin/controller/Test.php" afterPath="$PROJECT_DIR$/fastadmin/application/admin/controller/Test.php" />
-      <change beforePath="$PROJECT_DIR$/fastadmin/application/database.php" afterPath="$PROJECT_DIR$/fastadmin/application/database.php" />
+      <change beforePath="$PROJECT_DIR$/fastadmin/application/admin/controller/Update.php" afterPath="$PROJECT_DIR$/fastadmin/application/admin/controller/Update.php" />
+      <change beforePath="$PROJECT_DIR$/fastadmin/application/admin/controller/Update1.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fastadmin/application/admin/view/update/index.html" afterPath="$PROJECT_DIR$/fastadmin/application/admin/view/update/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,42 +23,10 @@
         <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/view/update/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="5" column="64" lean-forward="false" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+              <caret line="5" column="71" lean-forward="false" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
               <folding>
                 <element signature="n#style#0;n#font#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Update1.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/controller/Update1.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1254">
-              <caret line="69" column="5" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="69" selection-end-column="5" />
-              <folding>
-                <element signature="e#6#90#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bootstraptable.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/controller/example/Bootstraptable.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Colorbadge.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/controller/example/Colorbadge.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -103,10 +66,24 @@
       <file leaf-file-name="Update.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/controller/Update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="551">
+              <caret line="62" column="58" lean-forward="false" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/view/category/edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
-                <element signature="e#364#2124#0#PHP" expanded="false" />
+                <element signature="n#div#1;n#form#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#form#0;n#!!top" expanded="false" />
+                <element signature="n#div#5;n#form#0;n#!!top" expanded="false" />
+                <element signature="n#div#6;n#form#0;n#!!top" expanded="false" />
+                <element signature="n#div#7;n#form#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -115,8 +92,20 @@
       <file leaf-file-name="Category.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/controller/Category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-133">
-              <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+            <state relative-caret-position="285">
+              <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+              <folding>
+                <element signature="e#40#74#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/view/category/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -125,8 +114,8 @@
       <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/view/category/add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1059">
-              <caret line="0" column="102" lean-forward="false" selection-start-line="0" selection-start-column="102" selection-end-line="0" selection-end-column="102" />
+            <state relative-caret-position="152">
+              <caret line="57" column="20" lean-forward="false" selection-start-line="56" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -167,8 +156,8 @@
         <option value="$PROJECT_DIR$/fastadmin/application/admin/controller/update1/update.php" />
         <option value="$PROJECT_DIR$/fastadmin/application/admin/controller/update1/update1.php" />
         <option value="$PROJECT_DIR$/fastadmin/application/admin/controller/Update1.php" />
-        <option value="$PROJECT_DIR$/fastadmin/application/admin/controller/Update.php" />
         <option value="$PROJECT_DIR$/fastadmin/application/admin/view/update/index.html" />
+        <option value="$PROJECT_DIR$/fastadmin/application/admin/controller/Update.php" />
       </list>
     </option>
   </component>
@@ -363,7 +352,7 @@
       <workItem from="1516090773775" duration="3401000" />
       <workItem from="1516152202663" duration="191000" />
       <workItem from="1516354651264" duration="51396000" />
-      <workItem from="1517024832121" duration="13706000" />
+      <workItem from="1517024832121" duration="16062000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1516354829285</created>
@@ -442,11 +431,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517021522694</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update">
+      <created>1517367989900</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1517367989900</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79511000" />
+    <option name="totallyTimeSpent" value="81867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -509,7 +505,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -671,20 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/view/category/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/view/category/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="29" column="113" lean-forward="false" selection-start-line="29" selection-start-column="113" selection-end-line="29" selection-end-column="113" />
         </state>
       </provider>
     </entry>
@@ -877,45 +860,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1254">
           <caret line="69" column="5" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="69" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/view/category/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
+            <element signature="n#div#1;n#form#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#form#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#form#0;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#form#0;n#!!top" expanded="false" />
+            <element signature="n#div#7;n#form#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/controller/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+          <folding>
+            <element signature="e#40#74#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/view/category/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/view/category/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="57" column="20" lean-forward="false" selection-start-line="56" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/view/update/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="5" column="64" lean-forward="false" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+          <caret line="5" column="71" lean-forward="false" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
           <folding>
             <element signature="n#style#0;n#font#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/view/category/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1059">
-          <caret line="0" column="102" lean-forward="false" selection-start-line="0" selection-start-column="102" selection-end-line="0" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/controller/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/controller/Update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="e#364#2124#0#PHP" expanded="false" />
-          </folding>
+        <state relative-caret-position="551">
+          <caret line="62" column="58" lean-forward="false" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
