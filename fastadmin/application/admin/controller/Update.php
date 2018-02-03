@@ -9,7 +9,7 @@
 namespace app\admin\controller;
 use app\common\controller\Backend;
 
-use app\common\model\Category as CategoryModel;
+use app\common\model\Update as CategoryModel;
 use fast\Tree;
 
 class Update extends Backend
@@ -101,12 +101,12 @@ class Update extends Backend
     {
         parent::_initialize();
         $this->request->filter(['strip_tags']);
-        $this->model = model('Category');
+        $this->model = model('Update');
 
         $tree = Tree::instance();
-        $tree->init(collection($this->model->order('weigh desc,id desc')->select())->toArray(), 'pid');
-        $this->categorylist = $tree->getTreeList($tree->getTreeArray(0), 'name');
-        $categorydata = [0 => ['type' => 'all', 'name' => __('None')]];
+        $tree->init(collection($this->model->order('id desc')->select())->toArray());
+        $this->categorylist = $tree->getTreeList($tree->getTreeArray('呵呵'), 'title');
+        $categorydata = [0 => ['classify' => 'all', 'title' => __('None')]];
         foreach ($this->categorylist as $k => $v)
         {
             $categorydata[$v['id']] = $v;
@@ -126,20 +126,21 @@ class Update extends Backend
             $search = $this->request->request("search");
             //构造父类select列表选项数据
             $list = [];
-            if ($search)
+            $list=collection($this->model->order('id desc')->select())->toArray();
+           /* if ($search)
             {
                 foreach ($this->categorylist as $k => $v)
                 {
-                    if (stripos($v['name'], $search) !== false || stripos($v['nickname'], $search) !== false)
-                    {
+                   // if (stripos($v['title'], $search) !== false || stripos($v['path'], $search) !== false)
+                    //{
                         $list[] = $v;
-                    }
+                   // }
                 }
             }
             else
             {
                 $list = $this->categorylist;
-            }
+            }*/
             $total = count($list);
             $result = array("total" => $total, "rows" => $list);
 

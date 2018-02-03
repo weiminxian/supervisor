@@ -29,14 +29,19 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
-                        {field: 'type', title: __('Type')},
+                        {field: 'title', title: __('Title')},
+                        {field: 'classify', title: '分类'},
+                        {field: 'path', title: '文件地址'},
+                        /*
                         {field: 'name', title: __('Name'), align: 'left'},
                         {field: 'nickname', title: __('Nickname')},
                         {field: 'flag', title: __('Flag'), operate: false, formatter: Table.api.formatter.flag},
                         {field: 'image', title: __('Image'), operate: false, formatter: Table.api.formatter.image},
                         {field: 'weigh', title: __('Weigh')},
                         {field: 'status', title: __('Status'), operate: false, formatter: Table.api.formatter.status},
+                        */
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
+
                     ]
                 ]
             });
