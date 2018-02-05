@@ -10,7 +10,6 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     edit_url: 'update/edit',
                     del_url: 'update/del',
                     multi_url: 'update/multi',
-                    dragsort_url: '',
                     table: 'update',
                 }
             });
@@ -20,29 +19,22 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格
             table.bootstrapTable({
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
-               // escape: false,
                 pk: 'Id',
-                //sortName: 'weigh',
-                //pagination: false,
-                commonSearch: true,
-                titleForm: '',
+                sortName: 'Id',
                 columns: [
                     [
                         {checkbox: true},
                         {field: 'Id', title: __('Id')},
                         {field: 'title', title: __('Title')},
-                        {field: 'classify', title: '分类'},
-                        {field: 'path', title: '文件地址', formatter: Table.api.formatter.url},
-
+                        {field: 'classify', title: __('Classify')},
+                        {field: 'path', title: __('Path'),formatter: Table.api.formatter.url},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
-
                     ]
                 ]
             });
 
             // 为表格绑定事件
             Table.api.bindevent(table);
-
         },
         add: function () {
             Controller.api.bindevent();
@@ -50,17 +42,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         edit: function () {
             Controller.api.bindevent();
         },
-      /*  api: {
+        api: {
             bindevent: function () {
-                $(document).on("change", "#c-type", function () {
-                    $("#c-pid option[data-type='all']").prop("selected", true);
-                    $("#c-pid option").removeClass("hide");
-                    $("#c-pid option[data-type!='" + $(this).val() + "'][data-type!='all']").addClass("hide");
-                    $("#c-pid").selectpicker("refresh");
-                });
                 Form.api.bindevent($("form[role=form]"));
             }
-        }*/
+        }
     };
     return Controller;
 });

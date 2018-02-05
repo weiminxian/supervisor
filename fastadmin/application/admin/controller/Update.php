@@ -1,28 +1,42 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: root
- * Date: 2018/1/31 0031
- * Time: 09:55
- */
 
 namespace app\admin\controller;
+
 use app\common\controller\Backend;
 
+use think\Controller;
+use think\Request;
 
-
+/**
+ * 
+ *
+ * @icon fa fa-circle-o
+ */
 class Update extends Backend
 {
+    
+    /**
+     * Update模型对象
+     */
     protected $model = null;
-    protected $searchFields = 'id,title';
-    protected $relationSearch = true;
 
+    public function _initialize()
+    {
+        parent::_initialize();
+        $this->model = model('Update');
 
+    }
+    
+    /**
+     * 默认生成的控制器所继承的父类中有index/add/edit/del/multi五个方法
+     * 因此在当前控制器中可不用编写增删改查的代码,如果需要自己控制这部分逻辑
+     * 需要将application/admin/library/traits/Backend.php中对应的方法复制到当前控制器,然后进行修改
+     */
     public function Update()
     {
         //1.接收提交文件的用户
-        $title=$_POST['title'];
-        $classify=$_POST['classify'];
+        $title=$_POST['row[title]'];
+        $classify=$_POST['row[classify]'];
 
         //我们这里需要使用到 $_FILES
         /*echo "<pre>";
@@ -35,19 +49,19 @@ class Update extends Backend
 
         //获取文件的大小
         $file_size=$_FILES['myfile']['size'];
-        if($file_size>20*1024*1024)
+        if($file_size>2*1024*1024)
         {
             $this->error("文件过大，不能上传大于20M的文件");
             exit();
         }
 
-       /* $file_type=$_FILES['myfile']['type'];
-        echo $file_type;
-        if($file_type!="image/jpeg" && $file_type!='image/pjpeg')
-        {
-            echo "文件类型只能为jpg格式";
-            exit();
-        }*/
+        /* $file_type=$_FILES['myfile']['type'];
+         echo $file_type;
+         if($file_type!="image/jpeg" && $file_type!='image/pjpeg')
+         {
+             echo "文件类型只能为jpg格式";
+             exit();
+         }*/
 
 
         //判断是否上传成功（是否使用post方式上传）
@@ -80,83 +94,14 @@ class Update extends Backend
             }
             else
             {
-                echo "上传失败";
+                $this->error();
             }
         }
         else
         {
-            echo "上传失败";
-        }
-
-    }
-
-
-
-    public function _initialize()
-    {
-        parent::_initialize();
-        $this->model = model('Update');
-
-    }
-
-
-    /**
-     * 查看
-     */
-    public function index()
-    {
-        if ($this->request->isAjax())
-        {
-
-            $list=$this->model->order('id desc')->select();
-
-            $total = count($list);
-            $result = array("total" => $total, "rows" => $list);
-
-            return json($result);
-        }
-        return $this->view->fetch();
-    }
-    /**
-     * 编辑
-     */
-    public function edit($ids = NULL)
-    {
-        $row = $this->model->get(['id' => $ids]);
-        if (!$row)
-            $this->error(__('No Results were found'));
-        if ($this->request->isPost())
-        {
-            $params = $this->request->post("row/a", [], 'strip_tags');
-            if ($params)
-            {
-                if (!$params['ismenu'] && !$params['pid'])
-                {
-                    $this->error(__('The non-menu rule must have parent'));
-                }
-                $row->save($params);
-                Cache::rm('__menu__');
-                $this->success();
-            }
             $this->error();
         }
-        $this->view->assign("row", $row);
-        return $this->view->fetch();
+
     }
 
-    /*  public function del($ids = "")
-      {
-          if ($ids)
-          {
-
-
-              $count = $this->model->where('id', 'in', $ids)->delete();
-              if ($count)
-              {
-
-                  $this->success();
-              }
-          }
-          $this->error();
-      }*/
 }
