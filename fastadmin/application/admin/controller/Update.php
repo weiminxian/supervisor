@@ -9,26 +9,20 @@
 namespace app\admin\controller;
 use app\common\controller\Backend;
 
-use app\common\model\Update as CategoryModel;
-use fast\Tree;
+
 
 class Update extends Backend
 {
-   /* public function index()
-    {
+    protected $model = null;
+    protected $searchFields = 'id,title';
+    protected $relationSearch = true;
 
-        $this->view->assign([
-            'totaluser'        => 'hello world'
-        ]);
 
-        return $this->view->fetch();
-
-    }*/
     public function Update()
     {
         //1.接收提交文件的用户
-        $username=$_POST['username'];
-        $fileintro=$_POST['fileintro'];
+        $title=$_POST['title'];
+        $classify=$_POST['classify'];
 
         //我们这里需要使用到 $_FILES
         /*echo "<pre>";
@@ -41,19 +35,19 @@ class Update extends Backend
 
         //获取文件的大小
         $file_size=$_FILES['myfile']['size'];
-        if($file_size>2*1024*1024)
+        if($file_size>20*1024*1024)
         {
-            echo "文件过大，不能上传大于2M的文件";
+            $this->error("文件过大，不能上传大于20M的文件");
             exit();
         }
 
-        $file_type=$_FILES['myfile']['type'];
+       /* $file_type=$_FILES['myfile']['type'];
         echo $file_type;
         if($file_type!="image/jpeg" && $file_type!='image/pjpeg')
         {
             echo "文件类型只能为jpg格式";
             exit();
-        }
+        }*/
 
 
         //判断是否上传成功（是否使用post方式上传）
@@ -63,7 +57,7 @@ class Update extends Backend
             $uploaded_file=$_FILES['myfile']['tmp_name'];
 
             //我们给每个用户动态的创建一个文件夹
-            $user_path=$_SERVER['DOCUMENT_ROOT']."/update/".$username;
+            $user_path=$_SERVER['DOCUMENT_ROOT']."/update/".$title;
             //判断该用户文件夹是否已经有这个文件夹
             if(!file_exists($user_path))
             {
@@ -79,7 +73,10 @@ class Update extends Backend
 
             if(move_uploaded_file($uploaded_file,iconv("utf-8","gb2312",$move_to_file)))
             {
-                echo $_FILES['myfile']['name']."上传成功"," $user_path,<img src=\"$path\" />";
+                //echo $_FILES['myfile']['name']."上传成功"," $user_path,<img src=\"$path\" />";
+                $this->model->data(['title'=>$title,'classify'=>$classify,'path'=>$path])->save();
+                $this->success();
+
             }
             else
             {
@@ -93,28 +90,15 @@ class Update extends Backend
 
     }
 
-    protected $model = null;
-    protected $categorylist = [];
-    protected $noNeedRight = ['selectpage'];
+
 
     public function _initialize()
     {
         parent::_initialize();
-        $this->request->filter(['strip_tags']);
         $this->model = model('Update');
 
-        $tree = Tree::instance();
-        $tree->init(collection($this->model->order('id desc')->select())->toArray());
-        $this->categorylist = $tree->getTreeList($tree->getTreeArray('呵呵'), 'title');
-        $categorydata = [0 => ['classify' => 'all', 'title' => __('None')]];
-        foreach ($this->categorylist as $k => $v)
-        {
-            $categorydata[$v['id']] = $v;
-        }
-        $this->view->assign("flagList", $this->model->getFlagList());
-        $this->view->assign("typeList", CategoryModel::getTypeList());
-        $this->view->assign("parentList", $categorydata);
     }
+
 
     /**
      * 查看
@@ -123,24 +107,9 @@ class Update extends Backend
     {
         if ($this->request->isAjax())
         {
-            $search = $this->request->request("search");
-            //构造父类select列表选项数据
-            $list = [];
-            $list=collection($this->model->order('id desc')->select())->toArray();
-           /* if ($search)
-            {
-                foreach ($this->categorylist as $k => $v)
-                {
-                   // if (stripos($v['title'], $search) !== false || stripos($v['path'], $search) !== false)
-                    //{
-                        $list[] = $v;
-                   // }
-                }
-            }
-            else
-            {
-                $list = $this->categorylist;
-            }*/
+
+            $list=$this->model->order('id desc')->select();
+
             $total = count($list);
             $result = array("total" => $total, "rows" => $list);
 
@@ -148,15 +117,46 @@ class Update extends Backend
         }
         return $this->view->fetch();
     }
-
     /**
-     * Selectpage搜索
-     *
-     * @internal
+     * 编辑
      */
-    public function selectpage()
+    public function edit($ids = NULL)
     {
-        return parent::selectpage();
+        $row = $this->model->get(['id' => $ids]);
+        if (!$row)
+            $this->error(__('No Results were found'));
+        if ($this->request->isPost())
+        {
+            $params = $this->request->post("row/a", [], 'strip_tags');
+            if ($params)
+            {
+                if (!$params['ismenu'] && !$params['pid'])
+                {
+                    $this->error(__('The non-menu rule must have parent'));
+                }
+                $row->save($params);
+                Cache::rm('__menu__');
+                $this->success();
+            }
+            $this->error();
+        }
+        $this->view->assign("row", $row);
+        return $this->view->fetch();
     }
 
+    /*  public function del($ids = "")
+      {
+          if ($ids)
+          {
+
+
+              $count = $this->model->where('id', 'in', $ids)->delete();
+              if ($count)
+              {
+
+                  $this->success();
+              }
+          }
+          $this->error();
+      }*/
 }

@@ -1,17 +1,20 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: root
+ * Date: 2018/2/5 0005
+ * Time: 09:36
+ */
 
 namespace app\common\model;
 
 use think\Model;
 
-/**
- * 分类模型
- */
 class Update Extends Model
 {
 
     // 开启自动写入时间戳字段
-    protected $autoWriteTimestamp = 'int';
+ /*  protected $autoWriteTimestamp = 'int';
     // 定义时间戳字段名
     protected $createTime = 'createtime';
     protected $updateTime = 'updatetime';
@@ -30,11 +33,10 @@ class Update Extends Model
      * 读取分类类型
      * @return array
      */
-    public static function getTypeList()
+ /*   public static function getTypeList()
     {
         $typeList = config('site.categorytype');
-        foreach ($typeList as $k => &$v)
-        {
+        foreach ($typeList as $k => &$v) {
             $v = __($v);
         }
         return $typeList;
@@ -42,7 +44,7 @@ class Update Extends Model
 
     public function getTypeTextAttr($value, $data)
     {
-        $value = $value ? $value : $data['title'];
+        $value = $value ? $value : $data['Id'];
         $list = $this->getTypeList();
         return isset($list[$value]) ? $list[$value] : '';
     }
@@ -51,34 +53,31 @@ class Update Extends Model
     {
         return ['hot' => __('Hot'), 'index' => __('Index'), 'recommend' => __('Recommend')];
     }
-
-    public function getFlagTextAttr($value, $data)
+*/
+   /* public function getFlagTextAttr($value, $data)
     {
-        $value = $value ? $value : $data['classify'];
+        $value = $value ? $value : $data['Id'];
         $valueArr = explode(',', $value);
-        $list = $this->getFlagList();
+        //$list = $this->getFlagList();
         return implode(',', array_intersect_key($list, array_flip($valueArr)));
-    }
-
+    }*/
+/*
     /**
      * 读取分类列表
      * @param string $type 指定类型
      * @param string $status 指定状态
      * @return array
-     */
+     *//*
     public static function getCategoryArray($type = NULL, $status = NULL)
     {
-        $list = collection(self::where(function($query) use($type, $status) {
-            if (!is_null($type))
-            {
-                $query->where('title', '=', $type);
+        $list = collection(self::where(function ($query) use ($type, $status) {
+            if (!is_null($type)) {
+                $query->where('type', '=', $type);
             }
-            if (!is_null($status))
-            {
+            if (!is_null($status)) {
                 $query->where('status', '=', $status);
             }
-        })->order('id', 'desc')->select())->toArray();
+        })->order('weigh', 'desc')->select())->toArray();
         return $list;
-    }
-
+    }*/
 }

@@ -20,26 +20,20 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格
             table.bootstrapTable({
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
-                escape: false,
-                pk: 'id',
-                sortName: 'weigh',
-                pagination: false,
-                commonSearch: false,
+               // escape: false,
+                pk: 'Id',
+                //sortName: 'weigh',
+                //pagination: false,
+                commonSearch: true,
+                titleForm: '',
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'id', title: __('Id')},
+                        {field: 'Id', title: __('Id')},
                         {field: 'title', title: __('Title')},
                         {field: 'classify', title: '分类'},
-                        {field: 'path', title: '文件地址'},
-                        /*
-                        {field: 'name', title: __('Name'), align: 'left'},
-                        {field: 'nickname', title: __('Nickname')},
-                        {field: 'flag', title: __('Flag'), operate: false, formatter: Table.api.formatter.flag},
-                        {field: 'image', title: __('Image'), operate: false, formatter: Table.api.formatter.image},
-                        {field: 'weigh', title: __('Weigh')},
-                        {field: 'status', title: __('Status'), operate: false, formatter: Table.api.formatter.status},
-                        */
+                        {field: 'path', title: '文件地址', formatter: Table.api.formatter.url},
+
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
 
                     ]
@@ -48,6 +42,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
 
             // 为表格绑定事件
             Table.api.bindevent(table);
+
         },
         add: function () {
             Controller.api.bindevent();
@@ -55,7 +50,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         edit: function () {
             Controller.api.bindevent();
         },
-        api: {
+      /*  api: {
             bindevent: function () {
                 $(document).on("change", "#c-type", function () {
                     $("#c-pid option[data-type='all']").prop("selected", true);
@@ -65,7 +60,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 });
                 Form.api.bindevent($("form[role=form]"));
             }
-        }
+        }*/
     };
     return Controller;
 });

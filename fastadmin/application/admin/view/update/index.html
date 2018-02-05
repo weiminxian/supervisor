@@ -1,4 +1,3 @@
-
 <div class="panel panel-default panel-intro">
     {:build_heading()}
 
@@ -8,13 +7,6 @@
                 <div class="widget-body no-padding">
                     <div id="toolbar" class="toolbar">
                         {:build_toolbar()}
-                        <div class="dropdown btn-group {:$auth->check('category/multi')?'':'hide'}">
-                            <a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> {:__('More')}</a>
-                            <ul class="dropdown-menu text-left" role="menu">
-                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=normal"><i class="fa fa-eye"></i> {:__('Set to normal')}</a></li>
-                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=hidden"><i class="fa fa-eye-slash"></i> {:__('Set to hidden')}</a></li>
-                            </ul>
-                        </div>
                     </div>
                     <table id="table" class="table table-striped table-bordered table-hover"
                            data-operate-edit="{:$auth->check('update/edit')}"
@@ -27,15 +19,3 @@
         </div>
     </div>
 </div>
-
-<!--
-<form enctype="multipart/form-data" method="post" action="update/update">
-    <table>
-        <tr><td align="center" colspan="2"><font style="font-size:40px;font-family: 华文彩云;">文件上传</font></td></tr>
-        <tr><td>请填写用户名：</td><td><input type="text" name="username"/></td></tr>
-        <tr><td>请简单介绍该文件</td><td><textarea name="fileintro" rows="10" cols="80"></textarea></td></tr>
-        <tr><td>请选择你要上传文件：</td><td><input type="file" name="myfile"/></td></tr>
-        <tr><td><input type="submit" value="上传文件"/></td></tr>
-    </table>
-</form>
--->
