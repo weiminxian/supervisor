@@ -24,7 +24,7 @@ class Update extends Backend
     {
         parent::_initialize();
         $this->model = model('Update');
-
+        $this->view->assign("classifyList", $this->model->getClassifyList());
     }
     
     /**

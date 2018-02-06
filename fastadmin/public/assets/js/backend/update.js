@@ -26,8 +26,8 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {checkbox: true},
                         {field: 'Id', title: __('Id')},
                         {field: 'title', title: __('Title')},
-                        {field: 'category_id', title: __('Category_id')},
-                        {field: 'articlefile', title: __('Articlefile'), formatter: Table.api.formatter.url},
+                        {field: 'classify_text', title: __('Classify'), operate:false},
+                        {field: 'articlefile', title: __('Articlefile'), formatter: Controller.api.formatter.url},
                         {field: 'weigh', title: __('Weigh')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
@@ -46,6 +46,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         api: {
             bindevent: function () {
                 Form.api.bindevent($("form[role=form]"));
+            },
+            formatter: {
+                url: function (value, row, index) {
+                    return '<a href="' + '..' + value + '" class="label bg-green">' + value + '</a>';
+                },
             }
         }
     };
