@@ -20,14 +20,15 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             table.bootstrapTable({
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
                 pk: 'Id',
-                sortName: 'Id',
+                sortName: 'weigh',
                 columns: [
                     [
                         {checkbox: true},
                         {field: 'Id', title: __('Id')},
                         {field: 'title', title: __('Title')},
-                        {field: 'classify', title: __('Classify')},
-                        {field: 'path', title: __('Path'),formatter: Table.api.formatter.url},
+                        {field: 'category_type', title: __('Category_type')},
+                        {field: 'articlefile', title: __('Articlefile'), formatter: Table.api.formatter.url},
+                        {field: 'weigh', title: __('Weigh')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]
