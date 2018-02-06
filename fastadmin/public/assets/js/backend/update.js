@@ -26,7 +26,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {checkbox: true},
                         {field: 'Id', title: __('Id')},
                         {field: 'title', title: __('Title')},
-                        {field: 'category_type', title: __('Category_type')},
+                        {field: 'category_id', title: __('Category_id')},
                         {field: 'articlefile', title: __('Articlefile'), formatter: Table.api.formatter.url},
                         {field: 'weigh', title: __('Weigh')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
