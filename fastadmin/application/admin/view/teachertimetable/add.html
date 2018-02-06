@@ -1,0 +1,88 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-Place" class="control-label col-xs-12 col-sm-2">{:__('Place')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-Place" data-rule="required" class="form-control" name="row[Place]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-Curriculum" class="control-label col-xs-12 col-sm-2">{:__('Curriculum')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-Curriculum" data-rule="required" class="form-control" name="row[Curriculum]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-Teacher" class="control-label col-xs-12 col-sm-2">{:__('Teacher')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-Teacher" data-rule="required" class="form-control" name="row[Teacher]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-Title" class="control-label col-xs-12 col-sm-2">{:__('Title')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-Title" data-rule="required" class="form-control selectpicker" name="row[Title]">
+                {foreach name="titleList" item="vo"}
+                    <option value="{$key}" {in name="key" value=""}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-Class_number" class="control-label col-xs-12 col-sm-2">{:__('Class_number')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-Class_number" data-rule="required" class="form-control" name="row[Class_number]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-Class_Name" class="control-label col-xs-12 col-sm-2">{:__('Class_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-Class_Name" data-rule="required" class="form-control" name="row[Class_Name]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-Relly_Number_People" class="control-label col-xs-12 col-sm-2">{:__('Relly_number_people')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-Relly_Number_People" data-rule="required" class="form-control" name="row[Relly_Number_People]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-Class_Composition" class="control-label col-xs-12 col-sm-2">{:__('Class_composition')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-Class_Composition" data-rule="required" class="form-control" name="row[Class_Composition]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-Section" class="control-label col-xs-12 col-sm-2">{:__('Section')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-Section" data-rule="required" class="form-control" name="row[Section]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-Check_Record" class="control-label col-xs-12 col-sm-2">{:__('Check_record')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-Check_Record" class="form-control " rows="5" name="row[Check_Record]" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-Verification" class="control-label col-xs-12 col-sm-2">{:__('Verification')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-Verification" class="form-control " rows="5" name="row[Verification]" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-weight" class="control-label col-xs-12 col-sm-2">{:__('Weight')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-weight" class="form-control" name="row[weight]" type="number">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
