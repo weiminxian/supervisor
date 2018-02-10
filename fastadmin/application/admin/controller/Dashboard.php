@@ -20,11 +20,13 @@ class Dashboard extends Backend
     {
         $seventtime = \fast\Date::unixtime('day', -7);
         $paylist = $createlist = [];
-        for ($i = 0; $i < 7; $i++)
+        for ($i = 0; $i < 10; $i++)
         {
-            $day = date("Y-m-d", $seventtime + ($i * 86400));
-            $createlist[$day] = mt_rand(20, 200);
-            $paylist[$day] = mt_rand(1, mt_rand(1, $createlist[$day]));
+            $time1=date("Y-m-d", time());
+            $day1=date('Y-m-d',strtotime('-'.($i-1).' day',strtotime($time1)));
+            $day2 = date('Y-m-d',strtotime('-'.$i.' day',strtotime($time1)));
+            $createlist[$day2] = model('listennote')->where('createtime','<',strtotime($day1))->where('createtime','>',strtotime($day2))->count();
+            $paylist[$day2] = model('teachertimetable')->where('createtime','<',strtotime($day1))->where('createtime','>',strtotime($day2))->count();
         }
         $hooks = config('addons.hooks');
         $uploadmode = isset($hooks['upload_config_init']) && $hooks['upload_config_init'] ? implode(',', $hooks['upload_config_init']) : 'local';
@@ -38,11 +40,6 @@ class Dashboard extends Backend
 
         $listennote=model('listennote')->count();
         $newlistennote=model('listennote')->where('createtime','>',strtotime($time1))->where('createtime','<',strtotime($time2))->count();
-
-
-        $time3=strtotime(date("Y-m-d H:i:s", time()));
-
-       // $time= $Think.const.NOW_TIME;
 
         $this->view->assign([
             'checktotal'        => $CheckTotal,

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36387a6a-475f-416c-bdef-5a0998237e95" name="默认的" comment="dashboard">
+    <list default="true" id="36387a6a-475f-416c-bdef-5a0998237e95" name="默认的" comment="listen note">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/fastadmin/application/admin/controller/Dashboard.php" afterPath="$PROJECT_DIR$/fastadmin/application/admin/controller/Dashboard.php" />
+      <change beforePath="$PROJECT_DIR$/fastadmin/application/admin/lang/zh-cn/dashboard.php" afterPath="$PROJECT_DIR$/fastadmin/application/admin/lang/zh-cn/dashboard.php" />
+      <change beforePath="$PROJECT_DIR$/fastadmin/application/admin/view/dashboard/index.html" afterPath="$PROJECT_DIR$/fastadmin/application/admin/view/dashboard/index.html" />
+      <change beforePath="$PROJECT_DIR$/fastadmin/public/assets/js/backend/dashboard.js" afterPath="$PROJECT_DIR$/fastadmin/public/assets/js/backend/dashboard.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +23,8 @@
       <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/lang/zh-cn/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+            <state relative-caret-position="456">
+              <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -29,8 +33,8 @@
       <file leaf-file-name="Dashboard.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/controller/Dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="50" column="46" lean-forward="false" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="46" />
+            <state relative-caret-position="513">
+              <caret line="27" column="146" lean-forward="false" selection-start-line="27" selection-start-column="146" selection-end-line="27" selection-end-column="146" />
               <folding />
             </state>
           </provider>
@@ -39,34 +43,30 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/view/dashboard/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="177" column="56" lean-forward="true" selection-start-line="177" selection-start-column="56" selection-end-line="177" selection-end-column="56" />
+            <state relative-caret-position="-1843">
+              <caret line="177" column="26" lean-forward="true" selection-start-line="177" selection-start-column="26" selection-end-line="177" selection-end-column="26" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#script#0;n#!!top" expanded="false" />
-                <element signature="n#script#1;n#!!top" expanded="false" />
-                <element signature="n#script#2;n#!!top" expanded="false" />
-                <element signature="e#20288#20303#0" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#4;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <marker date="1518233856245" expanded="false" signature="5434:10110" ph="..." />
+                <marker date="1518233856245" expanded="false" signature="6249:6259" ph="..." />
+                <marker date="1518233856245" expanded="false" signature="6985:6995" ph="..." />
+                <marker date="1518233856245" expanded="false" signature="7710:7720" ph="..." />
+                <marker date="1518233856245" expanded="false" signature="8436:8446" ph="..." />
+                <marker date="1518233856245" expanded="false" signature="9155:9165" ph="..." />
+                <marker date="1518233856245" expanded="false" signature="9871:9881" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Listennote.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/model/Listennote.php">
+      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fastadmin/public/assets/js/backend/dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-166">
-              <caret line="46" column="73" lean-forward="false" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listennote.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fastadmin/public/assets/js/backend/listennote.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="33" column="63" lean-forward="false" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
+            <state relative-caret-position="266">
+              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -130,11 +130,12 @@
         <option value="$PROJECT_DIR$/fastadmin/application/admin/view/teachingeassessment/index.html" />
         <option value="$PROJECT_DIR$/fastadmin/public/assets/js/backend/teachertimetable.js" />
         <option value="$PROJECT_DIR$/fastadmin/public/assets/js/backend/teachingeassessment.js" />
-        <option value="$PROJECT_DIR$/fastadmin/application/admin/lang/zh-cn/dashboard.php" />
-        <option value="$PROJECT_DIR$/fastadmin/application/admin/controller/Dashboard.php" />
-        <option value="$PROJECT_DIR$/fastadmin/application/admin/view/dashboard/index.html" />
         <option value="$PROJECT_DIR$/fastadmin/application/admin/model/Listennote.php" />
         <option value="$PROJECT_DIR$/fastadmin/public/assets/js/backend/listennote.js" />
+        <option value="$PROJECT_DIR$/fastadmin/application/admin/lang/zh-cn/dashboard.php" />
+        <option value="$PROJECT_DIR$/fastadmin/application/admin/view/dashboard/index.html" />
+        <option value="$PROJECT_DIR$/fastadmin/public/assets/js/backend/dashboard.js" />
+        <option value="$PROJECT_DIR$/fastadmin/application/admin/controller/Dashboard.php" />
       </list>
     </option>
   </component>
@@ -338,7 +339,7 @@
       <workItem from="1516152202663" duration="191000" />
       <workItem from="1516354651264" duration="51396000" />
       <workItem from="1517024832121" duration="90422000" />
-      <workItem from="1517972048726" duration="13618000" />
+      <workItem from="1517972048726" duration="17125000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1516354829285</created>
@@ -515,11 +516,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518231054530</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="listen note">
+      <created>1518231103011</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1518231103011</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169845000" />
+    <option name="totallyTimeSpent" value="173352000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -587,7 +595,8 @@
     <MESSAGE value="Upload file" />
     <MESSAGE value="listen play" />
     <MESSAGE value="dashboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="dashboard" />
+    <MESSAGE value="listen note" />
+    <option name="LAST_COMMIT_MESSAGE" value="listen note" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -613,8 +622,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/view/update1/add.html" />
-    <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/view/update1/edit.html" />
     <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/view/update1/index.html" />
     <entry file="file://$PROJECT_DIR$/fastadmin/public/assets/js/backend/update1.js" />
     <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/model/Update1.php" />
@@ -919,39 +926,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/lang/zh-cn/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/controller/Dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="50" column="46" lean-forward="false" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/view/dashboard/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="177" column="56" lean-forward="true" selection-start-line="177" selection-start-column="56" selection-end-line="177" selection-end-column="56" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#script#0;n#!!top" expanded="false" />
-            <element signature="n#script#1;n#!!top" expanded="false" />
-            <element signature="n#script#2;n#!!top" expanded="false" />
-            <element signature="e#20288#20303#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/model/Listennote.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-166">
+        <state relative-caret-position="-152">
           <caret line="46" column="73" lean-forward="false" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="73" />
           <folding />
         </state>
@@ -961,6 +938,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
           <caret line="33" column="63" lean-forward="false" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/phpStudy/WWW/fastadmin - 副本2/application/admin/view/dashboard/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="306" column="26" lean-forward="true" selection-start-line="284" selection-start-column="20" selection-end-line="306" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/view/dashboard/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1843">
+          <caret line="177" column="26" lean-forward="true" selection-start-line="177" selection-start-column="26" selection-end-line="177" selection-end-column="26" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#4;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <marker date="1518233856245" expanded="false" signature="5434:10110" ph="..." />
+            <marker date="1518233856245" expanded="false" signature="6249:6259" ph="..." />
+            <marker date="1518233856245" expanded="false" signature="6985:6995" ph="..." />
+            <marker date="1518233856245" expanded="false" signature="7710:7720" ph="..." />
+            <marker date="1518233856245" expanded="false" signature="8436:8446" ph="..." />
+            <marker date="1518233856245" expanded="false" signature="9155:9165" ph="..." />
+            <marker date="1518233856245" expanded="false" signature="9871:9881" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/lang/zh-cn/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastadmin/application/admin/controller/Dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="146" lean-forward="false" selection-start-line="27" selection-start-column="146" selection-end-line="27" selection-end-column="146" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastadmin/public/assets/js/backend/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding />
         </state>
       </provider>
