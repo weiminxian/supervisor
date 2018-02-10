@@ -1,6 +1,10 @@
 <?php
 
 return [
+    'check total'        =>'全部检查数量',
+    'New check total'     =>'今天检查数量',
+    'listen note'         =>'全部听课数量',
+    'new listen note'         =>'今天听课数量',
     'Custom'                => '自定义',
     'Pid'                   => '父ID',
     'Type'                  => '栏目类型',

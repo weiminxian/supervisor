@@ -28,11 +28,27 @@ class Dashboard extends Backend
         }
         $hooks = config('addons.hooks');
         $uploadmode = isset($hooks['upload_config_init']) && $hooks['upload_config_init'] ? implode(',', $hooks['upload_config_init']) : 'local';
+
+        $CheckTotal=model('teachertimetable')->count();
+
+
+        $time1=date("Y-m-d", time());
+        $time2 = date('Y-m-d',strtotime('+1 day',strtotime($time1)));
+        $newchecktotal=model('teachertimetable')->where('createtime','>',strtotime($time1))->where('createtime','<',strtotime($time2))->count();
+
+        $listennote=model('listennote')->count();
+        $newlistennote=model('listennote')->where('createtime','>',strtotime($time1))->where('createtime','<',strtotime($time2))->count();
+
+
+        $time3=strtotime(date("Y-m-d H:i:s", time()));
+
+       // $time= $Think.const.NOW_TIME;
+
         $this->view->assign([
-            'totaluser'        => 35200,
-            'totalviews'       => 219390,
-            'totalorder'       => 32143,
-            'totalorderamount' => 174800,
+            'checktotal'        => $CheckTotal,
+            'newchecktotal'       => $newchecktotal,
+            'listennote'       => $listennote,
+            'newlistennote' =>  $newlistennote,
             'todayuserlogin'   => 321,
             'todayusersignup'  => 430,
             'todayorder'       => 2324,
