@@ -1,0 +1,27 @@
+[ 2018-02-10T10:33:10+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-02-10T10:33:10+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-02-10T10:33:10+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008000s ]
+[ 2018-02-10T10:33:10+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-02-10T10:33:10+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=10.127.1.17;dbname=fastadmin;charset=utf8
+[ 2018-02-10T10:33:10+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'listennote' [ RunTime:0.002000s ]
+[ 2018-02-10T10:33:10+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_listennote' [ RunTime:0.001000s ]
+[ 2018-02-10T10:33:10+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_listennote' ORDER BY ORDINAL_POSITION [ RunTime:0.008000s ]
+[ 2018-02-10T10:33:10+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-02-10T10:33:10+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-02-10T10:33:10+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008001s ]
+[ 2018-02-10T10:33:10+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-02-10T10:33:10+08:00 ][ info ] [ LANG ] C:\Users\root\PhpstormProjects\supervisor\fastadmin\application\admin\lang/zh-cn.php
+[ 2018-02-10T10:33:10+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=10.127.1.17;dbname=fastadmin;charset=utf8
+[ 2018-02-10T10:33:10+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.014001s ]
+[ 2018-02-10T10:33:10+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `name` = 'listennote' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-02-10T10:33:10+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'listennote' , '听课记录' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1518229990 , 1518229990) [ RunTime:0.001000s ]
+[ 2018-02-10T10:33:10+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (177 , 'listennote/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1518229990 , 1518229990) [ RunTime:0.001000s ]
+[ 2018-02-10T10:33:10+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (177 , 'listennote/recyclebin' , 'fa fa-circle-o' , '回收站' , 0 , 'normal' , 1518229990 , 1518229990) [ RunTime:0.000000s ]
+[ 2018-02-10T10:33:10+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (177 , 'listennote/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1518229990 , 1518229990) [ RunTime:0.000000s ]
+[ 2018-02-10T10:33:10+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (177 , 'listennote/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1518229990 , 1518229990) [ RunTime:0.001000s ]
+[ 2018-02-10T10:33:10+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (177 , 'listennote/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1518229990 , 1518229990) [ RunTime:0.000000s ]
+[ 2018-02-10T10:33:10+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (177 , 'listennote/destroy' , 'fa fa-circle-o' , '真实删除' , 0 , 'normal' , 1518229990 , 1518229990) [ RunTime:0.001000s ]
+[ 2018-02-10T10:33:10+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (177 , 'listennote/restore' , 'fa fa-circle-o' , '还原' , 0 , 'normal' , 1518229990 , 1518229990) [ RunTime:0.000000s ]
+[ 2018-02-10T10:33:10+08:00 ][ sql ] [ SQL ] INSERT INTO `fa_auth_rule` (`pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (177 , 'listennote/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1518229990 , 1518229990) [ RunTime:0.001000s ]

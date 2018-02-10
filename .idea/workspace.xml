@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36387a6a-475f-416c-bdef-5a0998237e95" name="默认的" comment="listen play">
+    <list default="true" id="36387a6a-475f-416c-bdef-5a0998237e95" name="默认的" comment="dashboard">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/fastadmin/application/admin/controller/Dashboard.php" afterPath="$PROJECT_DIR$/fastadmin/application/admin/controller/Dashboard.php" />
-      <change beforePath="$PROJECT_DIR$/fastadmin/application/admin/lang/zh-cn/dashboard.php" afterPath="$PROJECT_DIR$/fastadmin/application/admin/lang/zh-cn/dashboard.php" />
-      <change beforePath="$PROJECT_DIR$/fastadmin/application/admin/view/dashboard/index.html" afterPath="$PROJECT_DIR$/fastadmin/application/admin/view/dashboard/index.html" />
-      <change beforePath="$PROJECT_DIR$/fastadmin/public/assets/index.html" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -342,7 +338,7 @@
       <workItem from="1516152202663" duration="191000" />
       <workItem from="1516354651264" duration="51396000" />
       <workItem from="1517024832121" duration="90422000" />
-      <workItem from="1517972048726" duration="13557000" />
+      <workItem from="1517972048726" duration="13618000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1516354829285</created>
@@ -512,11 +508,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517975000777</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="dashboard">
+      <created>1518231054530</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1518231054530</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169784000" />
+    <option name="totallyTimeSpent" value="169845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -583,7 +586,8 @@
     <MESSAGE value="Upload file table display." />
     <MESSAGE value="Upload file" />
     <MESSAGE value="listen play" />
-    <option name="LAST_COMMIT_MESSAGE" value="listen play" />
+    <MESSAGE value="dashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="dashboard" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
