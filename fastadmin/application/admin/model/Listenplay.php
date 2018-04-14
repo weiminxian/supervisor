@@ -18,15 +18,15 @@ class Listenplay extends Model
     
     // 追加属性
     protected $append = [
-        'School_District_text',
+        'SchoolDistrict_text',
         'Group_text',
         'Title_text',
-        'Listen_SD_text'
+        'ListenSD_text'
     ];
     
 
     
-    public function getSchoolDistrictList()
+    public function getSchooldistrictList()
     {
         return ['成都校区' => __('成都校区'),'德阳校区' => __('德阳校区')];
     }     
@@ -41,16 +41,16 @@ class Listenplay extends Model
         return ['教授级高工' => __('教授级高工'),'高工' => __('高工'),'讲师' => __('讲师'),'副教授' => __('副教授'),'教授' => __('教授')];
     }     
 
-    public function getListenSdList()
+    public function getListensdList()
     {
         return ['成都校区' => __('成都校区'),'德阳校区' => __('德阳校区')];
     }     
 
 
-    public function getSchoolDistrictTextAttr($value, $data)
+    public function getSchooldistrictTextAttr($value, $data)
     {        
-        $value = $value ? $value : $data['School_District'];
-        $list = $this->getSchoolDistrictList();
+        $value = $value ? $value : $data['SchoolDistrict'];
+        $list = $this->getSchooldistrictList();
         return isset($list[$value]) ? $list[$value] : '';
     }
 
@@ -71,10 +71,10 @@ class Listenplay extends Model
     }
 
 
-    public function getListenSdTextAttr($value, $data)
+    public function getListensdTextAttr($value, $data)
     {        
-        $value = $value ? $value : $data['Listen_SD'];
-        $list = $this->getListenSdList();
+        $value = $value ? $value : $data['ListenSD'];
+        $list = $this->getListensdList();
         return isset($list[$value]) ? $list[$value] : '';
     }
 

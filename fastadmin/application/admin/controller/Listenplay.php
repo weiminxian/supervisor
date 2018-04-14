@@ -24,10 +24,10 @@ class Listenplay extends Backend
     {
         parent::_initialize();
         $this->model = model('Listenplay');
-        $this->view->assign("schoolDistrictList", $this->model->getSchoolDistrictList());
+        $this->view->assign("schooldistrictList", $this->model->getSchooldistrictList());
         $this->view->assign("groupList", $this->model->getGroupList());
         $this->view->assign("titleList", $this->model->getTitleList());
-        $this->view->assign("listenSdList", $this->model->getListenSdList());
+        $this->view->assign("listensdList", $this->model->getListensdList());
     }
     
     /**

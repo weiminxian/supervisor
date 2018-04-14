@@ -125,10 +125,10 @@
 <div class="panel panel-default panel-intro">
     <div class="panel-heading">
         {:build_heading(null, false)}
-        <ul class="nav nav-tabs">
+      <!--  <ul class="nav nav-tabs">
             <li class="active"><a href="#one" data-toggle="tab">{:__('Dashboard')}</a></li>
             <li><a href="#two" data-toggle="tab">{:__('Custom')}</a></li>
-        </ul>
+        </ul>-->
     </div>
     <div class="panel-body">
         <div id="myTabContent" class="tab-content">
@@ -330,7 +330,7 @@
                         </div>
                     </div>
                 </div>
-
+<!--
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="box box-danger">
@@ -405,6 +405,7 @@
                         </div>
                     </div>
                 </div>
+               -->
             </div>
             <div class="tab-pane fade" id="two">
                 <div class="row">
@@ -416,6 +417,7 @@
         </div>
     </div>
 </div>
+<!--
 <script id="newstpl" type="text/html">
     <ul class="nav nav-stacked">
         <%for(var i=0;i < news.length;i++){%>
@@ -444,6 +446,7 @@
         <%}%>
     </ul>
 </script>
+-->
 <script>
     var Orderdata = {
     column: {:json_encode(array_keys($paylist))},

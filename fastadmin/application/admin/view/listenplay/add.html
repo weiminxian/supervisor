@@ -1,29 +1,29 @@
 <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
 
     <div class="form-group">
-        <label for="c-T_number" class="control-label col-xs-12 col-sm-2">{:__('T_number')}:</label>
+        <label for="c-TNumber" class="control-label col-xs-12 col-sm-2">{:__('Tnumber')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-T_number" data-rule="required" class="form-control" name="row[T_number]" type="text">
+            <input id="c-TNumber" data-rule="required" class="form-control" name="row[TNumber]" type="text" value="">
         </div>
     </div>
     <div class="form-group">
-        <label for="c-T_name" class="control-label col-xs-12 col-sm-2">{:__('T_name')}:</label>
+        <label for="c-TName" class="control-label col-xs-12 col-sm-2">{:__('Tname')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-T_name" data-rule="required" class="form-control" name="row[T_name]" type="text">
+            <input id="c-TName" data-rule="required" class="form-control" name="row[TName]" type="text" value="">
         </div>
     </div>
     <div class="form-group">
-        <label for="c-T_Department" class="control-label col-xs-12 col-sm-2">{:__('T_department')}:</label>
+        <label for="c-TDepartment" class="control-label col-xs-12 col-sm-2">{:__('Tdepartment')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-T_Department" data-rule="required" class="form-control" name="row[T_Department]" type="text">
+            <input id="c-TDepartment" data-rule="required" class="form-control" name="row[TDepartment]" type="text" value="">
         </div>
     </div>
     <div class="form-group">
-        <label for="c-School_District" class="control-label col-xs-12 col-sm-2">{:__('School_district')}:</label>
+        <label for="c-SchoolDistrict" class="control-label col-xs-12 col-sm-2">{:__('Schooldistrict')}:</label>
         <div class="col-xs-12 col-sm-8">
                         
-            <select  id="c-School_District" data-rule="required" class="form-control selectpicker" name="row[School_District]">
-                {foreach name="schoolDistrictList" item="vo"}
+            <select  id="c-SchoolDistrict" data-rule="required" class="form-control selectpicker" name="row[SchoolDistrict]">
+                {foreach name="schooldistrictList" item="vo"}
                     <option value="{$key}" {in name="key" value="德阳校区"}selected{/in}>{$vo}</option>
                 {/foreach}
             </select>
@@ -31,21 +31,21 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="c-E_Number" class="control-label col-xs-12 col-sm-2">{:__('E_number')}:</label>
+        <label for="c-ENumber" class="control-label col-xs-12 col-sm-2">{:__('Enumber')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-E_Number" data-rule="required" class="form-control" name="row[E_Number]" type="text" value="">
+            <input id="c-ENumber" data-rule="required" class="form-control" name="row[ENumber]" type="text" value="">
         </div>
     </div>
     <div class="form-group">
-        <label for="c-E_Name" class="control-label col-xs-12 col-sm-2">{:__('E_name')}:</label>
+        <label for="c-EName" class="control-label col-xs-12 col-sm-2">{:__('Ename')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-E_Name" data-rule="required" class="form-control" name="row[E_Name]" type="text" value="">
+            <input id="c-EName" data-rule="required" class="form-control" name="row[EName]" type="text" value="">
         </div>
     </div>
     <div class="form-group">
-        <label for="c-E_department" class="control-label col-xs-12 col-sm-2">{:__('E_department')}:</label>
+        <label for="c-Edepartment" class="control-label col-xs-12 col-sm-2">{:__('Edepartment')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-E_department" class="form-control" name="row[E_department]" type="text">
+            <input id="c-Edepartment" class="form-control" name="row[Edepartment]" type="text">
         </div>
     </div>
     <div class="form-group">
@@ -61,9 +61,9 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="c-Post_or_TRD" class="control-label col-xs-12 col-sm-2">{:__('Post_or_trd')}:</label>
+        <label for="c-PostOrTRD" class="control-label col-xs-12 col-sm-2">{:__('Postortrd')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-Post_or_TRD" data-rule="required" class="form-control" name="row[Post_or_TRD]" type="text">
+            <input id="c-PostOrTRD" data-rule="required" class="form-control" name="row[PostOrTRD]" type="text" value="">
         </div>
     </div>
     <div class="form-group">
@@ -79,11 +79,11 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="c-Listen_SD" class="control-label col-xs-12 col-sm-2">{:__('Listen_sd')}:</label>
+        <label for="c-ListenSD" class="control-label col-xs-12 col-sm-2">{:__('Listensd')}:</label>
         <div class="col-xs-12 col-sm-8">
                         
-            <select  id="c-Listen_SD" data-rule="required" class="form-control selectpicker" name="row[Listen_SD]">
-                {foreach name="listenSdList" item="vo"}
+            <select  id="c-ListenSD" data-rule="required" class="form-control selectpicker" name="row[ListenSD]">
+                {foreach name="listensdList" item="vo"}
                     <option value="{$key}" {in name="key" value="德阳校区"}selected{/in}>{$vo}</option>
                 {/foreach}
             </select>
